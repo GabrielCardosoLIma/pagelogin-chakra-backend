@@ -5,8 +5,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "gray.900",
-        color: "gray.50"
+        bg: "gray.900"
       }
     },
     colors: {
@@ -22,8 +21,8 @@ export const theme = extendTheme({
       "50": "#EEEEF2",
     },
     fonts: {
-      heading: 'Roboto',
-      body: 'Roboto', 
+      heading: 'Raleway',
+      body: 'Raleway', 
     }
   }
 });

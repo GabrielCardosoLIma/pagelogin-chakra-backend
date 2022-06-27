@@ -1,6 +1,7 @@
-
-import { Button, Flex, Stack } from '@chakra-ui/react';
-import { Input } from '@chakra-ui/input';
+import { Button, Flex, Stack } from "@chakra-ui/react";
+import { Input } from "@chakra-ui/input";
+import { User } from "phosphor-react"
+import './style.css'
 
 export default function Login() {
   return (
@@ -8,21 +9,34 @@ export default function Login() {
       <Flex
         as="form"
         width="100%"
-        maxW={360}
-        bg="gray.800"
+        maxW={460}
+        bg="white"
         p="8"
         borderRadius={8}
         flexDir="column"
       >
+        <div className="aling--user">
+          <User className="user" size={45} />
+        </div>
+        <h2>Bem-vindo</h2>
         <Stack spacing="2">
-        <label htmlFor="">Nome de usuário ou Email:</label>
-         <Input name="E-mail" type="email" placeholder="Digite seu usuário"/>
-         <label htmlFor="">Senha:</label>
-         <Input name="Senha" type="password" placeholder="Digite sua senha"/>
+          <label htmlFor="">Nome de usuário ou Email:</label>
+          <Input name="E-mail" type="email" placeholder="Digite seu usuário" />
+          <label htmlFor="">Senha:</label>
+          <Input name="Senha" type="password" placeholder="Digite sua senha" />
         </Stack>
-
-        <Button type="submit" mt="6" colorScheme="pink">Entrar</Button>
+        <div className="register-pass">
+          <p>
+            Não tem registro? <span className="span">resgistre-se</span>
+          </p>
+          <p>
+            Esqueci minha senha
+          </p>
+        </div>
+        <Button type="submit" mt="6" colorScheme="blue">
+          Entrar
+        </Button>
       </Flex>
     </Flex>
-  )
+  );
 }

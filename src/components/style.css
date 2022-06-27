@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+label{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    color: #2b6cb0;
+}
+p{
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+p:hover{
+    text-decoration: underline;
+    color: #2b6cb0;
+}
+.aling--user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user{
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 30px;
+}
+.span{
+    color: #2b6cb0;
+}
+.register-pass{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
